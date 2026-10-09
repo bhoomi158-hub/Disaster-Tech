@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Emergency | DisasterTech</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                Disaster<span>Tech</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+                <li><a href="safety.html">Safety</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="tagline">EMERGENCY & INQUIRIES</p>
+            <h1>Emergency Hotlines & <span>Contact</span></h1>
+            <p>
+                Find 24/7 emergency response helpline numbers for immediate disaster relief or get in touch with our team for questions, feedback, and academic collaborations.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACT & HELPLINES SECTION -->
+    <section class="section">
+        <div class="section-title">
+            <p>GET IN TOUCH</p>
+            <h2>Support & Response Directory</h2>
+        </div>
+        <p class="description">
+            In case of an ongoing natural hazard or emergency, contact local authorities immediately using the hotlines below. For platform feedback or inquiries, use the message form.
+        </p>
+
+        <div class="contact-layout">
+
+            <!-- LEFT: EMERGENCY HELPLINES -->
+            <div class="helplines-container">
+                <div class="helpline-card">
+                    <div class="helpline-info">
+                        <h3>National Disaster Management (NDMA)</h3>
+                        <p>Central 24/7 disaster relief and coordination helpline</p>
+                    </div>
+                    <a href="tel:1078" class="helpline-number">1078</a>
+                </div>
+
+                <div class="helpline-card">
+                    <div class="helpline-info">
+                        <h3>National Emergency Number</h3>
+                        <p>Unified emergency support for all immediate services</p>
+                    </div>
+                    <a href="tel:112" class="helpline-number">112</a>
+                </div>
+
+                <div class="helpline-card">
+                    <div class="helpline-info">
+                        <h3>State Disaster Operations Centre</h3>
+                        <p>State-level flood, cyclone, and tremor alert desk</p>
+                    </div>
+                    <a href="tel:1070" class="helpline-number">1070</a>
+                </div>
+
+                <div class="helpline-card">
+                    <div class="helpline-info">
+                        <h3>Emergency Ambulance Services</h3>
+                        <p>Paramedic emergency and medical casualty response</p>
+                    </div>
+                    <a href="tel:108" class="helpline-number">108</a>
+                </div>
+
+                <div class="helpline-card">
+                    <div class="helpline-info">
+                        <h3>Fire & Rescue Services</h3>
+                        <p>Urban fire rescue, building collapse & hazardous materials</p>
+                    </div>
+                    <a href="tel:101" class="helpline-number">101</a>
+                </div>
+            </div>
+
+            <!-- RIGHT: INQUIRY & FEEDBACK FORM -->
+            <div class="contact-form-card">
+                <h3 style="font-size: 22px; margin-bottom: 8px;">Send an Inquiry or Feedback</h3>
+                <p style="color: #8fa0b5; font-size: 14px;">We welcome questions on disaster technology studies, case suggestions, or technical feedback.</p>
+
+                <form id="contactForm" class="contact-form" onsubmit="handleContactSubmit(event)">
+                    <div class="form-group">
+                        <label for="contactName">Your Name</label>
+                        <input type="text" id="contactName" class="form-control" placeholder="e.g. Alex Johnson" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactEmail">Email Address</label>
+                        <input type="email" id="contactEmail" class="form-control" placeholder="name@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactTopic">Inquiry Category</label>
+                        <select id="contactTopic" class="form-control" required>
+                            <option value="" disabled selected>Select an option...</option>
+                            <option value="curriculum">Disaster Tech Curriculum / Unit 4</option>
+                            <option value="casestudy">Suggest a Case Study</option>
+                            <option value="feedback">General Project Feedback</option>
+                            <option value="bug">Report an Issue</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" class="form-control" rows="4" placeholder="Write your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="border: none; cursor: pointer; width: 100%; margin-top: 10px;">Submit Message</button>
+
+                    <div id="contactFeedback" class="form-feedback"></div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>DisasterTech</h2>
+        <p>Role of Technology in Disaster Management</p>
+        <p class="copyright">© 2026 DisasterTech | Educational Project</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

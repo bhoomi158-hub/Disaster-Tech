@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | DisasterTech</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                Disaster<span>Tech</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+                <li><a href="safety.html">Safety</a></li>
+                <li><a href="quiz.html" class="active">Quiz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="tagline">TEST YOUR KNOWLEDGE</p>
+            <h1>Disaster & <span>Tech Quiz</span></h1>
+            <p>
+                Test your understanding of modern disaster management technologies, early warning systems, and life-saving safety practices through these 10 questions.
+            </p>
+        </div>
+    </section>
+
+    <!-- QUIZ SECTION -->
+    <section class="section">
+        <div class="section-title">
+            <p>INTERACTIVE ASSESSMENT</p>
+            <h2>10-Question Knowledge Check</h2>
+        </div>
+        <p class="description">
+            Select the best option for each question and click "Submit Answers" at the bottom to calculate your score and view detailed feedback.
+        </p>
+
+        <form id="disasterQuizForm" class="quiz-wrapper" onsubmit="event.preventDefault();">
+
+            <!-- Question 1 -->
+            <div class="quiz-card">
+                <span class="quiz-q-num">Question 01</span>
+                <p class="quiz-question">Which technology is primarily utilized to monitor large-scale weather systems and track the trajectory of cyclones?</p>
+                <div class="quiz-options">
+                    <label class="option-label">
+                        <input type="radio" name="q1" value="a">
+                        <span>A) Weather satellites with infrared and radar imaging</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q1" value="b">
+                        <span>B) Ground-level seismographs</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q1" value="c">
+                        <span>C) 3D topographical printers</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q1" value="d">
+                        <span>D) Ultrasound medical scanners</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="quiz-card">
+                <span class="quiz-q-num">Question 02</span>
+                <p class="quiz-question">What is the critical role of Geographic Information Systems (GIS) before and during a disaster?</p>
+                <div class="quiz-options">
+                    <label class="option-label">
+                        <input type="radio" name="q2" value="a">
+                        <span>A) Mapping vulnerable flood zones, population density, and planning evacuation corridors</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q2" value="b">
+                        <span>B) Generating auxiliary electrical power for shelters</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q2" value="c">
+                        <span>C) Physically repairing collapsed highway bridges</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q2" value="d">
+                        <span>D) Controlling drone motors remotely</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="quiz-card">
+                <span class="quiz-q-num">Question 03</span>
+                <p class="quiz-question">How do Unmanned Aerial Vehicles (drones) provide high-value support during post-earthquake search and rescue?</p>
+                <div class="quiz-options">
+                    <label class="option-label">
+                        <input type="radio" name="q3" value="a">
+                        <span>A) Predicting subsequent tectonic shifts months ahead</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q3" value="b">
+                        <span>B) Accessing hazardous, collapsed, or isolated zones with thermal cameras to locate survivors</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q3" value="c">
+                        <span>C) Replacing all satellite telemetry systems</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q3" value="d">
+                        <span>D) Reconstructing municipal electrical grids automatically</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="quiz-card">
+                <span class="quiz-q-num">Question 04</span>
+                <p class="quiz-question">What is the primary benefit of deploying Internet of Things (IoT) sensors in flood-prone river basins?</p>
+                <div class="quiz-options">
+                    <label class="option-label">
+                        <input type="radio" name="q4" value="a">
+                        <span>A) Continuous real-time telemetry on water levels and flow rates for early warning alerts</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q4" value="b">
+                        <span>B) Filtering and purifying river water automatically</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q4" value="c">
+                        <span>C) Storing potable drinking water in subterranean vaults</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q4" value="d">
+                        <span>D) Generating satellite weather maps</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="quiz-card">
+                <span class="quiz-q-num">Question 05</span>
+                <p class="quiz-question">How does Artificial Intelligence (AI) enhance emergency response operations?</p>
+                <div class="quiz-options">
+                    <label class="option-label">
+                        <input type="radio" name="q5" value="a">
+                        <span>A) By eliminating the need for trained human rescue responders</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q5" value="b">
+                        <span>B) By analyzing complex sensor data to predict hazard spread and optimize relief logistics</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q5" value="c">
+                        <span>C) By preventing geological faults from rupturing</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q5" value="d">
+                        <span>D) By manually dispatching ambulances via radio antennas</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="quiz-card">
+                <span class="quiz-q-num">Question 06</span>
+                <p class="quiz-question">If you are indoors during an earthquake, what is the globally recognized protective safety protocol?</p>
+                <div class="quiz-options">
+                    <label class="option-label">
+                        <input type="radio" name="q6" value="a">
+                        <span>A) Sprint immediately into the middle of the street</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q6" value="b">
+                        <span>B) Drop, Cover, and Hold on under a sturdy table, away from windows and heavy furniture</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q6" value="c">
+                        <span>C) Rush into the elevator to exit the building as fast as possible</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q6" value="d">
+                        <span>D) Stand directly beside glass windows to observe ground tremors</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="quiz-card">
+                <span class="quiz-q-num">Question 07</span>
+                <p class="quiz-question">What is the most critical instruction to follow when a sudden flash flood alert is broadcast?</p>
+                <div class="quiz-options">
+                    <label class="option-label">
+                        <input type="radio" name="q7" value="a">
+                        <span>A) Move to higher ground immediately and never walk or drive through moving floodwaters</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q7" value="b">
+                        <span>B) Shelter inside underground basements until water subsides</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q7" value="c">
+                        <span>C) Attempt to drive through standing water to leave the city</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q7" value="d">
+                        <span>D) Test electrical cords and switches submerged in water</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="quiz-card">
+                <span class="quiz-q-num">Question 08</span>
+                <p class="quiz-question">When a tropical cyclone warning is issued for your area, which safety action should be prioritized?</p>
+                <div class="quiz-options">
+                    <label class="option-label">
+                        <input type="radio" name="q8" value="a">
+                        <span>A) Visit coastal shorelines to view tidal surges</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q8" value="b">
+                        <span>B) Secure loose outdoor items, stay indoors in a reinforced room, and track battery-powered radio alerts</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q8" value="c">
+                        <span>C) Keep all exterior doors and windows wide open</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q8" value="d">
+                        <span>D) Turn off all emergency weather communication devices</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="quiz-card">
+                <span class="quiz-q-num">Question 09</span>
+                <p class="quiz-question">Which sequence represents the four recognized phases of the Disaster Management Cycle?</p>
+                <div class="quiz-options">
+                    <label class="option-label">
+                        <input type="radio" name="q9" value="a">
+                        <span>A) Prevention & Mitigation, Preparedness, Response, Recovery</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q9" value="b">
+                        <span>B) Observation, Construction, Demolition, Relocation</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q9" value="c">
+                        <span>C) Warning, Alarm, Evacuation, Insurance</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q9" value="d">
+                        <span>D) Detection, Containment, Eradication, Monitoring</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="quiz-card">
+                <span class="quiz-q-num">Question 10</span>
+                <p class="quiz-question">Which combination of supplies forms the core of an emergency disaster survival kit?</p>
+                <div class="quiz-options">
+                    <label class="option-label">
+                        <input type="radio" name="q10" value="a">
+                        <span>A) 3-day supply of drinking water, non-perishable food, first aid kit, and a battery-powered torch/radio</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q10" value="b">
+                        <span>B) Luxury electronics, desktop computers, and metal furniture</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q10" value="c">
+                        <span>C) Large electric heaters and flammable fuel bottles</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="q10" value="d">
+                        <span>D) Garden equipment and decorative glassware</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- QUIZ BUTTONS -->
+            <div class="quiz-controls">
+                <button type="button" class="btn quiz-submit-btn" onclick="checkQuiz()">Submit Answers</button>
+                <button type="button" class="btn btn-secondary" onclick="resetQuiz()">Clear Form</button>
+            </div>
+
+            <!-- RESULT CONTAINER -->
+            <div id="quizResult"></div>
+
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>DisasterTech</h2>
+        <p>Role of Technology in Disaster Management</p>
+        <p class="copyright">© 2026 DisasterTech | Educational Project</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
